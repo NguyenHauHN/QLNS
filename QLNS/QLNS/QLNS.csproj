@@ -203,6 +203,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+<<<<<<< HEAD
     <Compile Include="Common\Constant.cs" />
     <Compile Include="Common\Encrypt.cs" />
     <Compile Include="Common\UserLogin.cs" />
@@ -220,6 +221,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+=======
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\customjs\activeMenu.js" />
+    <Content Include="Assets\customjs\uploadImage.js" />
+>>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
     <Content Include="Assets\moment\moment.min.js" />
     <Content Include="Assets\plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="Assets\plugins\bootstrap-slider\slider.css" />
@@ -1060,7 +1071,10 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+<<<<<<< HEAD
     <Content Include="Content\Custom\styles.css" />
+=======
+>>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts\ionicons.svg" />
@@ -1115,7 +1129,10 @@
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-codes.json" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+<<<<<<< HEAD
     <Content Include="Assets\activeMenu.js" />
+=======
+>>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery-1.12.4.min.map" />
@@ -1146,6 +1163,7 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\ControlSidebar.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
@@ -1160,14 +1178,23 @@
     <Content Include="Views\Department\Index.cshtml" />
     <Content Include="Views\Department\Create.cshtml" />
     <Content Include="Views\Department\Edit.cshtml" />
+=======
+>>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\bootstrap\" />
     <Folder Include="Assets\dist\" />
+<<<<<<< HEAD
     <Folder Include="Images\" />
     <Folder Include="Scripts\Custom\" />
     <Folder Include="Views\Base\" />
+=======
+    <Folder Include="Controllers\" />
+    <Folder Include="Images\" />
+    <Folder Include="Models\" />
+    <Folder Include="Scripts\Custom\" />
+>>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
