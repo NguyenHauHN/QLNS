@@ -59,12 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="DAO\DepartmentDAO.cs" />
-    <Compile Include="DAO\EmployeeDAO.cs" />
-    <Compile Include="DAO\UserDAO.cs" />
-=======
->>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
     <Compile Include="EF\Admin.cs" />
     <Compile Include="EF\Department.cs" />
     <Compile Include="EF\Employee.cs" />
@@ -80,12 +74,9 @@
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
   </ItemGroup>
-<<<<<<< HEAD
-=======
   <ItemGroup>
     <Folder Include="DAO\" />
   </ItemGroup>
->>>>>>> 66dc110daaf02de5007eed25e04de228f878ec84
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
