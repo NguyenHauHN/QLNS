@@ -12,3 +12,17 @@ E:\Thực tập nhóm\QLNS\Model\bin\Debug\PagedList.Mvc.xml
 E:\Thực tập nhóm\QLNS\Model\obj\Debug\Model.dll
 E:\Thực tập nhóm\QLNS\Model\obj\Debug\Model.pdb
 E:\Thực tập nhóm\QLNS\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\obj\Debug\Model.dll
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\obj\Debug\Model.pdb
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\Model.dll.config
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\Model.dll
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\Model.pdb
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\EntityFramework.dll
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\PagedList.dll
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\PagedList.Mvc.dll
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\EntityFramework.xml
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\PagedList.xml
+F:\Thực tập nhóm\Project QLNS\QLNS\QLNS\Model\bin\Debug\PagedList.Mvc.xml
