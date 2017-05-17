@@ -203,7 +203,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\EmployeeController.cs" />
+=======
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\Encrypt.cs" />
+    <Compile Include="Common\UserLogin.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
+>>>>>>> origin/yendt
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1052,6 +1059,7 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Custom\styles.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts\ionicons.svg" />
@@ -1136,9 +1144,15 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\ControlSidebar.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
+=======
+    <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Department\Create.cshtml" />
+    <Content Include="Views\Department\Edit.cshtml" />
+>>>>>>> origin/yendt
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
