@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="EF\Admin.cs" />
     <Compile Include="EF\Department.cs" />
     <Compile Include="EF\Employee.cs" />
@@ -73,9 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
