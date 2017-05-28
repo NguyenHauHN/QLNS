@@ -1,0 +1,385 @@
+﻿
+@{
+    ViewBag.Title = "Hướng dẫn sử dụng - Quản lý nhân sự";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="content">
+    <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" class="title-tab" data-toggle="tab">Quản lý Admin</a></li>
+            <li><a href="#tab_2" class="title-tab" data-toggle="tab">Quản lý Nhân viên</a></li>
+            <li><a href="#tab_3" class="title-tab" data-toggle="tab">Quản lý Phòng ban</a></li>
+            <li><a href="#tab_4" class="title-tab" data-toggle="tab">Thông tin Tài khoản</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_1">
+                <div class="box-group" id="accordion">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#new-admin" aria-expanded="false" class="collapsed">
+                                    Thêm mới
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="new-admin" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                            <div class="box-body">
+                               <p>Bước 1. Để thêm mới quản trị viên, bạn click button Thêm mới:</p>
+                                <img src=@Url.Content("~/Images/admin_new_click.png") class="img-responsive img-thumbnail img-guide"/> 
+                                <p>Bước 2. Giao diện để nhập thông tin Quản trị viên mới hiển thị, bạn cần nhập tối thiểu các thông tin: Họ tên,Tên đăng nhập, Mật khẩu,
+                                 Email và click button Thêm mới để hoàn tất quá trình thêm mới quản trị viên</p>
+                                <img src=@Url.Content("~/Images/new_admin_info.png") class="img-responsive img-thumbnail img-guide" /> 
+                                <p>
+                                    Bước 3. Thêm mới thành công, quay trở lại giao diện Danh sách Quản trị viên, bạn sẽ thấy Quản trị viên mới đã có trong danh sách
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-danger">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#edit-admin" class="collapsed" aria-expanded="false">
+                                    Cập nhật
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="edit-admin" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để cập nhật thông tin quản trị viên, bạn click button có icon hình bút chì bên cột Action trong danh sách quản trị viên:</p>
+                                <img src=@Url.Content("~/Images/admin_edit_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Giao diện để cập nhật thông tin Quản trị viên hiển thị, trong đó hiển thị các thông tin hiện có có quản trị viên được chọn, 
+                                    bạn cần nhập tối thiểu các thông tin: Họ tên,Tên đăng nhập, Mật khẩu,
+                                    Email và click button Cập nhật để hoàn tất quá trình cập nhật thông tin quản trị viên.
+                                </p>
+                                <img src=@Url.Content("~/Images/admin_edit.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Cập nhật thành công, quay trở lại giao diện Danh sách Quản trị viên, bạn sẽ thấy thông tin Quản trị viên đã được thay đổi trong danh sách
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#delete-admin" class="collapsed" aria-expanded="false">
+                                    Xóa
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="delete-admin" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để xóa thông tin quản trị viên, bạn click button có icon hình thùng rác bên cột Action trong danh sách quản trị viên:</p>
+                                <img src=@Url.Content("~/Images/admin_delete_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Có một thông báo xác nhận Xóa. Nếu bạn chọn OK, hệ thống sẽ tiến hành xóa: 
+                                </p>
+                                <img src=@Url.Content("~/Images/admin_delete.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Xóa thành công, hệ thống sẽ tự load lại danh sách Quản trị viên.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#search-admin" class="collapsed" aria-expanded="false">
+                                    Tìm kiếm
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="search-admin" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để tìm kiếm thông tin quản trị viên, bạn nhập từ khóa bất kỳ vào ô như hình, hệ thống hỗ trợ bạn tìm kiếm các từ khóa trong các thông tin Họ tên và 
+                                Tên đăng nhập của Quản trị viên:</p>
+                                <img src=@Url.Content("~/Images/admin_search.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Hệ thống trả về danh sách các Quản trị viên có bao gồm thông tin bạn cần.
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.tab-pane -->
+            <div class="tab-pane" id="tab_2">
+                <div class="box-group" id="accordion">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#new-employee" aria-expanded="false" class="collapsed">
+                                    Thêm mới
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="new-employee" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                            <div class="box-body">
+                                <p>Bước 1. Để thêm mới nhân viên, bạn click button Thêm mới:</p>
+                                <img src=@Url.Content("~/Images/employee_new_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Giao diện để nhập thông tin Nhân viên mới hiển thị, bạn cần nhập tối thiểu các thông tin: Họ tên,Địa chỉ, Email,
+                                    và click button Thêm mới để hoàn tất quá trình thêm mới Nhân viên
+                                </p>
+                                <img src=@Url.Content("~/Images/emploee_new.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Thêm mới thành công, quay trở lại giao diện Danh sách Nhân viên, bạn sẽ thấy Nhân viên mới đã có trong danh sách
+                                </p>
+                                <img src=@Url.Content("~/Images/emploee_new_success.PNG") class="img-responsive img-thumbnail img-guide" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-danger">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#edit-employee" class="collapsed" aria-expanded="false">
+                                    Cập nhật
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="edit-employee" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để cập nhật thông tin nhân viên, bạn click button có icon hình bút chì bên cột Action trong danh sách Nhân viên:</p>
+                                <img src=@Url.Content("~/Images/employee_edit_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Giao diện để cập nhật thông tin Nhân viên hiển thị, trong đó hiển thị các thông tin hiện có có Nhân viên được chọn,
+                                    bạn cần nhập tối thiểu các thông tin: Họ tên,Địa chỉ, Email, và click button Cập nhật để hoàn tất quá trình
+                                     cập nhật thông tin Nhân viên.
+                                </p>
+                                <img src=@Url.Content("~/Images/employee_edit.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Cập nhật thành công, quay trở lại giao diện Danh sách Nhân viên, bạn sẽ thấy Nhân viên mới đã có trong danh sách
+                                </p>
+                                <img src=@Url.Content("~/Images/employee_edit_success.PNG") class="img-responsive img-thumbnail img-guide" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#delete-employee" class="collapsed" aria-expanded="false">
+                                    Xóa
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="delete-employee" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để xóa thông tin Nhân viên, bạn click button có icon hình thùng rác bên cột Action trong danh sách Nhân viên:</p>
+                                <img src=@Url.Content("~/Images/employee_delete.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Có một thông báo xác nhận Xóa. Nếu bạn chọn OK, hệ thống sẽ tiến hành xóa:
+                                </p>
+                                <img src=@Url.Content("~/Images/employee_delete_confirm.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Xóa thành công, hệ thống sẽ tự load lại danh sách Nhân viên.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#search-employee" class="collapsed" aria-expanded="false">
+                                    Tìm kiếm
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="search-employee" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>
+                                    Bước 1. Để tìm kiếm thông tin Nhân viên viên, bạn nhập từ khóa bất kỳ vào ô như hình, hệ thống hỗ trợ bạn tìm kiếm các từ khóa trong
+                                     các thông tin Họ tên và
+                                    Mã nhân viên:
+                                </p>
+                                <img src=@Url.Content("~/Images/employee_search.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Hệ thống trả về danh sách các Nhân viên có bao gồm thông tin bạn cần.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.tab-pane -->
+            <div class="tab-pane" id="tab_3">
+                <div class="box-group" id="accordion">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#new-department" aria-expanded="false" class="collapsed">
+                                    Thêm mới
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="new-department" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                            <div class="box-body">
+                                <p>Bước 1. Để thêm mới Phòng ban, bạn click button Thêm mới:</p>
+                                <img src=@Url.Content("~/Images/department_new_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Giao diện để nhập thông tin Phòng ban mới hiển thị, bạn cần nhập tối thiểu các thông tin: Tên phòng ban,Địa chỉ, Số điện thoại
+                                    và click button Thêm mới để hoàn tất quá trình thêm mới Phòng ban
+                                </p>
+                                <img src=@Url.Content("~/Images/department_new.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Thêm mới thành công, quay trở lại giao diện Danh sách Phòng ban, bạn sẽ thấy Phòng ban mới đã có trong danh sách
+                                </p>
+                                <img src=@Url.Content("~/Images/department_new_success.PNG") class="img-responsive img-thumbnail img-guide" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-danger">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#edit-department" class="collapsed" aria-expanded="false">
+                                    Cập nhật
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="edit-department" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để cập nhật thông tin Phòng ban, bạn click button có icon hình bút chì bên cột Action trong danh sách Phòng ban:</p>
+                                <img src=@Url.Content("~/Images/department_edit_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Giao diện để cập nhật thông tin Phòng ban hiển thị, trong đó hiển thị các thông tin hiện có của Phòng ban được chọn,
+                                    bạn cần nhập tối thiểu các thông tin: Tên phòng ban,Địa chỉ, Số điện thoại và click button Cập nhật để hoàn tất quá trình
+                                    cập nhật thông tin Phòng ban.
+                                </p>
+                                <img src=@Url.Content("~/Images/department_edit.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Cập nhật thành công, quay trở lại giao diện Danh sách Nhân viên, bạn sẽ thấy Nhân viên mới đã có trong danh sách
+                                </p>
+                                <img src=@Url.Content("~/Images/department_edit_success.PNG") class="img-responsive img-thumbnail img-guide" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#delete-department" class="collapsed" aria-expanded="false">
+                                    Xóa
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="delete-department" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để xóa thông tin Phòng ban, bạn click button có icon hình thùng rác bên cột Action trong danh sách Phòng ban:</p>
+                                <img src=@Url.Content("~/Images/department_delete_click.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Có một thông báo xác nhận Xóa. Nếu bạn chọn OK, hệ thống sẽ tiến hành xóa:
+                                </p>
+                                <img src=@Url.Content("~/Images/department_delete.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Xóa thành công, hệ thống sẽ tự load lại danh sách Phòng ban.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#search-department" class="collapsed" aria-expanded="false">
+                                    Tìm kiếm
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="search-department" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>
+                                    Bước 1. Để tìm kiếm thông tin Phòng ban viên, bạn nhập từ khóa bất kỳ vào ô như hình, hệ thống hỗ trợ bạn tìm kiếm các từ khóa trong
+                                    các thông tin Tên phòng ban và
+                                    Mã phòng ban:
+                                </p>
+                                <img src=@Url.Content("~/Images/department_search.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Hệ thống trả về danh sách các Phòng ban có bao gồm thông tin bạn cần.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.tab-pane -->
+            <div class="tab-pane" id="tab_4">
+                <div class="box-group" id="accordion">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#reset-password" aria-expanded="false" class="collapsed">
+                                    Quên mật khẩu?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="reset-password" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                            <div class="box-body">
+                                <p>Bước 1.Nếu quên mật khẩu đăng nhập, hệ thống hỗ trợ ban reset mật khẩu. Bạn click vào link Quên mật khẩu? ở view Login:</p>
+                                <img src=@Url.Content("~/Images/reset_pass.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Nhập đầy đủ các thông tin, sau đó nhấn nút Lưu thay đổi
+                                </p>
+                                <img src=@Url.Content("~/Images/reset_pass_view.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Thay đổi thành công, bạn có thể quay lại để login bằng cách nhấn vào link Login
+                                </p>
+                                <img src=@Url.Content("~/Images/reset_pass_success.PNG") class="img-responsive img-thumbnail img-guide" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-danger">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#change-password" class="collapsed" aria-expanded="false">
+                                    Thay đổi mật khẩu
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="change-password" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để thay đổi mật khẩu của admin đang đăng nhập, bạn click avatar admin ở góc phỉa màn hình, sau đó click Đổi mật khẩu:</p>
+                                <img src=@Url.Content("~/Images/change_pass.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 2. Giao diện đổi mật khẩu hiển thị,bạn cần nhập đầy đủ các thông tin, sau đó nhấn Lưu để lưu thay đổi
+                                </p>
+                                <img src=@Url.Content("~/Images/change_pass_view.PNG") class="img-responsive img-thumbnail img-guide" />
+                                <p>
+                                    Bước 3. Cập nhật thành công:
+                                </p>
+                                <img src=@Url.Content("~/Images/change_pass_success.PNG") class="img-responsive img-thumbnail img-guide" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel box box-success">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#logout" class="collapsed" aria-expanded="false">
+                                    Đăng xuất
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="logout" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="box-body">
+                                <p>Bước 1. Để đăng xuất khỏi phiên làm việc của admin đang đăng nhập, bạn click avatar admin ở góc phỉa màn hình, sau đó click Đăng xuất:</p>
+                                <img src=@Url.Content("~/Images/logout.PNG") class="img-responsive img-thumbnail img-guide" />
+                              
+                                <p>
+                                    Bước 2. Đăng xuất thành công, hệ thống quay trở lại giao diện Login:
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /.tab-content -->
+    </div>
+</section>
+
+
