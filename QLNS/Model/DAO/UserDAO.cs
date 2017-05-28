@@ -55,7 +55,7 @@ namespace Model.DAO
             IQueryable<Admin> model = db.Admins;
             if (!string.IsNullOrEmpty(keyword))
             {
-                model = model.Where(x => x.Status == 1 && (x.Name.Contains(keyword) || x.Username.Contains(keyword)));
+                model = model.Where(x => x.Status == 1 &&  (x.Name.Contains(keyword) || x.Username.Contains(keyword)));
             }
             else
             {
@@ -68,18 +68,25 @@ namespace Model.DAO
         }
         public int Insert(Admin admin)
         {
-            var username = db.Admins.Where(x => x.Username == admin.Username).FirstOrDefault();
-            if (username != null)
+            try
+            {
+                var username = db.Admins.Where(x => x.Username.Equals(admin.Username)).FirstOrDefault();
+                if (username != null)
+                {
+                    return -1;
+                }
+                else
+                {
+                    admin.Status = 1;
+                    admin.CreateDate = DateTime.Now;
+                    db.Admins.Add(admin);
+                    db.SaveChanges();
+                    return 1;
+                }
+            }
+            catch (Exception)
             {
                 return -1;
-            }
-            else
-            {
-                admin.Status = 1;
-                admin.CreateDate = DateTime.Now;
-                db.Admins.Add(admin);
-                db.SaveChanges();
-                return 1;
             }
         }
 
