@@ -1,16 +1,19 @@
 ﻿using Model.DAO;
+using Model.EF;
 using Model.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
 namespace QLNS.Controllers
 {
-    public class EmployeeController : Controller
+    public class EmployeeController : BaseController
     {
+        // GET: Employee
         public ActionResult Index(string keyword, int page = 1, int pageSize = 10)
         {
             int totalEmployee = 0;
@@ -35,7 +38,7 @@ namespace QLNS.Controllers
             {
                 var maxCode = new EmployeeDAO().GetMaxCode().Substring(2);
                 employeeViewModel.EmployeeData.Avatar = srcAvatar;
-                employeeViewModel.EmployeeData.Code = "NV" + (Convert.ToInt32(maxCode) + 1).ToString();
+                employeeViewModel.EmployeeData.Code = "NV" +(Convert.ToInt32(maxCode) + 1).ToString();
                 var result = new EmployeeDAO().Insert(employeeViewModel.EmployeeData);
                 if (result == 1)
                 {
@@ -56,7 +59,7 @@ namespace QLNS.Controllers
             var listDepartment = new DepartmentDAO().ListAll();
             ViewBag.ListDepartment = listDepartment;
             var employee = new EmployeeDAO().GetEmployeeByID(id);
-
+            
             return View(employee);
         }
 
@@ -70,7 +73,7 @@ namespace QLNS.Controllers
                 {
                     employee.EmployeeData.Avatar = srcAvatar;
                 }
-                employee.EmployeeData.ID = Convert.ToInt32(saveIDEmployee);
+                employee.EmployeeData.ID = Convert.ToInt32(saveIDEmployee) ;
                 var result = new EmployeeDAO().Update(employee.EmployeeData);
                 if (result == 1)
                 {

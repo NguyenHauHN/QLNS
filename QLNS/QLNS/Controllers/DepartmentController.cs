@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace QLNS.Controllers
 {
-    public class DepartmentController : Controller
+    public class DepartmentController : BaseController
     {
         // GET: Department
         public ActionResult Index(string keyword, int page = 1, int pageSize = 5)

@@ -1,18 +1,11 @@
 ﻿using Model.EF;
 using Model.ViewModel;
-<<<<<<< HEAD
-=======
 using PagedList;
->>>>>>> origin/yendt
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
-using PagedList;
-=======
->>>>>>> origin/yendt
 
 namespace Model.DAO
 {
@@ -42,11 +35,7 @@ namespace Model.DAO
 
         public IEnumerable<DepartmentViewModel> ListAllDepartment(string keyword, ref int totalDepartment, int page = 1, int pageSize = 5)
         {
-<<<<<<< HEAD
-
-=======
           
->>>>>>> origin/yendt
             IQueryable<DepartmentViewModel> listDepartment = null;
             if (!string.IsNullOrEmpty(keyword))
             {
