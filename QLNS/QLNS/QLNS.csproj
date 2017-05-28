@@ -206,10 +206,23 @@
     <Compile Include="Common\Constant.cs" />
     <Compile Include="Common\Encrypt.cs" />
     <Compile Include="Common\UserLogin.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ResetPasswordController.cs" />
+=======
+>>>>>>> huynq
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\GuideController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+<<<<<<< HEAD
+=======
+>>>>>>> haunt
+>>>>>>> huynq
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1144,36 +1157,23 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\ControlSidebar.cshtml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     <Content Include="Views\Home\Index.cshtml" />
->>>>>>> origin/haunt
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\ResetPassword\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Create.cshtml" />
     <Content Include="Views\Admin\Edit.cshtml" />
     <Content Include="Views\Admin\ChangePassword.cshtml" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
-=======
     <Content Include="Views\Department\Index.cshtml" />
     <Content Include="Views\Department\Create.cshtml" />
     <Content Include="Views\Department\Edit.cshtml" />
->>>>>>> origin/yendt
->>>>>>> master
-=======
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\ResetPassword\Index.cshtml" />
->>>>>>> origin/huynq
-=======
     <Content Include="Views\Guide\Index.cshtml" />
->>>>>>> origin/haunt
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

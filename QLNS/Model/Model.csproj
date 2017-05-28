@@ -66,6 +66,8 @@
     <Compile Include="EF\Employee.cs" />
     <Compile Include="EF\QLNSDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\DepartmentViewModel.cs" />
+    <Compile Include="ViewModel\EmployeeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
