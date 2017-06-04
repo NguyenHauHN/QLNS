@@ -107,6 +107,7 @@ namespace Model.DAO
                 employeeTemp.Note = employee.Note;
                 employeeTemp.Salary = employee.Salary;
                 employeeTemp.StartDate = employee.StartDate;
+                employeeTemp.IdCard = employee.IdCard;
                 db.SaveChanges();
                 return 1;
             }

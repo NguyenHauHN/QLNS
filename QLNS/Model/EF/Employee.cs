@@ -27,6 +27,7 @@
         public string Email { get; set; }
 
         [StringLength(50)]
+        [Required(ErrorMessage = "Bạn không được để trống trường này!")]
         public string Phone { get; set; }
 
         public DateTime? Birthday { get; set; }
@@ -53,5 +54,9 @@
         public string Avatar { get; set; }
 
         public decimal? Salary { get; set; }
+
+        [StringLength(50)]
+        [Required(ErrorMessage = "Bạn không được để trống trường này!")]
+        public string IdCard { get; set; }
     }
 }
